@@ -11,10 +11,11 @@
 		C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035CE1BC7B84C00E7818C /* AppDelegate.m */; };
 		C15035D21BC7B84C00E7818C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035D11BC7B84C00E7818C /* ViewController.m */; };
 		C15035D51BC7B84C00E7818C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15035D31BC7B84C00E7818C /* Main.storyboard */; };
-		C15035D71BC7B84C00E7818C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15035D61BC7B84C00E7818C /* Assets.xcassets */; };
 		C15035DA1BC7B84C00E7818C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15035D81BC7B84C00E7818C /* LaunchScreen.storyboard */; };
 		C15035E51BC7B84C00E7818C /* StitchingImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035E41BC7B84C00E7818C /* StitchingImageTests.m */; };
 		C15035F01BC7B84C00E7818C /* StitchingImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035EF1BC7B84C00E7818C /* StitchingImageUITests.m */; };
+		C15036031BC7BCCC00E7818C /* StitchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C15036021BC7BCCC00E7818C /* StitchImage.m */; settings = {ASSET_TAGS = (); }; };
+		C17ED0CF1BDB2AAF00B56E86 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17ED0CE1BDB2AAF00B56E86 /* images.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		C15035D01BC7B84C00E7818C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C15035D11BC7B84C00E7818C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C15035D41BC7B84C00E7818C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C15035D61BC7B84C00E7818C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15035D91BC7B84C00E7818C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C15035DB1BC7B84C00E7818C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15035E01BC7B84C00E7818C /* StitchingImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StitchingImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,9 @@
 		C15035EB1BC7B84C00E7818C /* StitchingImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StitchingImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15035EF1BC7B84C00E7818C /* StitchingImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StitchingImageUITests.m; sourceTree = "<group>"; };
 		C15035F11BC7B84C00E7818C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15036011BC7BCCC00E7818C /* StitchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchImage.h; sourceTree = "<group>"; };
+		C15036021BC7BCCC00E7818C /* StitchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchImage.m; sourceTree = "<group>"; };
+		C17ED0CE1BDB2AAF00B56E86 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,16 @@
 		C15035C91BC7B84C00E7818C /* StitchingImage */ = {
 			isa = PBXGroup;
 			children = (
+				C15035FD1BC7BAEC00E7818C /* Class */,
 				C15035CD1BC7B84C00E7818C /* AppDelegate.h */,
 				C15035CE1BC7B84C00E7818C /* AppDelegate.m */,
 				C15035D01BC7B84C00E7818C /* ViewController.h */,
 				C15035D11BC7B84C00E7818C /* ViewController.m */,
 				C15035D31BC7B84C00E7818C /* Main.storyboard */,
-				C15035D61BC7B84C00E7818C /* Assets.xcassets */,
 				C15035D81BC7B84C00E7818C /* LaunchScreen.storyboard */,
 				C15035DB1BC7B84C00E7818C /* Info.plist */,
 				C15035CA1BC7B84C00E7818C /* Supporting Files */,
+				C17ED0CE1BDB2AAF00B56E86 /* images.xcassets */,
 			);
 			path = StitchingImage;
 			sourceTree = "<group>";
@@ -139,6 +143,15 @@
 			);
 			path = StitchingImageUITests;
 			sourceTree = "<group>";
+		};
+		C15035FD1BC7BAEC00E7818C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C15036011BC7BCCC00E7818C /* StitchImage.h */,
+				C15036021BC7BCCC00E7818C /* StitchImage.m */,
+			);
+			path = Class;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					C15035C61BC7B84C00E7818C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZQA8RKS39U;
 					};
 					C15035DF1BC7B84C00E7818C = {
 						CreatedOnToolsVersion = 7.0;
@@ -243,8 +257,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17ED0CF1BDB2AAF00B56E86 /* images.xcassets in Resources */,
 				C15035DA1BC7B84C00E7818C /* LaunchScreen.storyboard in Resources */,
-				C15035D71BC7B84C00E7818C /* Assets.xcassets in Resources */,
 				C15035D51BC7B84C00E7818C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +287,7 @@
 				C15035D21BC7B84C00E7818C /* ViewController.m in Sources */,
 				C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */,
 				C15035CC1BC7B84C00E7818C /* main.m in Sources */,
+				C15036031BC7BCCC00E7818C /* StitchImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StitchingImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kouyujiaoer.StitchingImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkey.StitchingImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -422,9 +438,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StitchingImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kouyujiaoer.StitchingImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkey.StitchingImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -496,6 +513,7 @@
 				C15035F61BC7B84C00E7818C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15035F71BC7B84C00E7818C /* Build configuration list for PBXNativeTarget "StitchingImageTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				C15035F91BC7B84C00E7818C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15035FA1BC7B84C00E7818C /* Build configuration list for PBXNativeTarget "StitchingImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +531,7 @@
 				C15035FC1BC7B84C00E7818C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
