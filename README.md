@@ -37,7 +37,16 @@ imageView_2.image = [UIImage imageNamed:@"2.jpg"];
 
 ```
 
-#### Stitch image
+#### Create a canvasView
+
+```objective-c
+UIImageView *canvasView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+canvasView.layer.cornerRadius = 10;
+canvasView.layer.masksToBounds = YES;
+canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
+```
+
+#### You can stitching image right now
 
 ```objective-c   
 [[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
