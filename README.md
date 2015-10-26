@@ -1,5 +1,5 @@
 ## screenshot
-![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png)
+![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/320)
 
 ## Install
 
@@ -7,13 +7,13 @@
 If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
 
 ``` bash
-pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua/MQRCodeReaderViewController.git'
+pod 'StitchingImage', :git => 'https://github.com/zhengjinghua/StitchingImage.git'
 ```
 into your Podfile file.
 
 ### Manually
 
-[Download](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) the project and copy the `QRCodeReaderViewController` folder into your project and then simply `#import "QRCodeReaderViewController.h"` in the file(s) you would like to use it in.
+[Download](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) the project and copy the `Classes` folder into your project and then simply `#import "StitchImage.h"` in the file(s) you would like to use it in.
 
 ## Usage
 
