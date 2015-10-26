@@ -25,7 +25,6 @@ const CGFloat canvasViewSideLength = 100.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"example";
     
     _canvasViewMargin = (DeviceWidth - canvasViewSideLength * 3) / 4;
     _beginningY = (DeviceHeight - canvasViewSideLength * 3 - _canvasViewMargin * 2) / 2;
@@ -60,7 +59,7 @@ const CGFloat canvasViewSideLength = 100.0f;
     NSMutableArray *imageViews = [[NSMutableArray alloc] init];
     
     for (int index = 1; index <= count; index++) {
-        UIImageView *imageView = [UIImageView new];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d", index]];
         imageView.image = image;
@@ -68,6 +67,8 @@ const CGFloat canvasViewSideLength = 100.0f;
         [imageViews addObject:imageView];
     }
     
+    // also can use:
+    // return [[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
     return [[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 }
 
