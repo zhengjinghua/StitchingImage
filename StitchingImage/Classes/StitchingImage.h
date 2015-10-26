@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StitchImage : UIImageView
+@interface StitchingImage : UIImageView
 
 - (UIImageView *)stitchingOnImageView:(UIImageView *)canvasView withImageViews:(NSArray *)imageViews;
 - (UIImageView *)stitchingOnImageView:(UIImageView *)canvasView withImageViews:(NSArray *)imageViews marginValue:(CGFloat)marginValue;

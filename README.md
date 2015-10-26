@@ -49,12 +49,12 @@ canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 #### You can stitching image right now
 
 ```objective-c   
-[[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 ```
 
 #### If you want to change margin value, you can use
 ```objective-c  
-[[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
+[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
 ```
 
 ## License (MIT)

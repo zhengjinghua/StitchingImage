@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "StitchImage.h"
+#import "StitchingImage.h"
 
 #define DeviceWidth [UIScreen mainScreen].bounds.size.width
 #define DeviceHeight [UIScreen mainScreen].bounds.size.height
@@ -68,8 +68,8 @@ const CGFloat canvasViewSideLength = 100.0f;
     }
     
     // also can use:
-    // return [[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
-    return [[StitchImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+    // return [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
+    return [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 }
 
 @end
