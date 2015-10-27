@@ -1,18 +1,20 @@
-## StitchingImage
-在之前的公司项目中, 有一个类似生成微信群组封面 (即将指定数量用户的头像拼接成一个新的封面) 的需求, 在开发的过程中发现没有人写过相应的比较好的解决方案, 因此我自己造了一个轮子, 希望能帮助到有类似需求的同学.
+## 说明
 
-## Screenshot
+类似微信讨论组的头像拼接, 适用于聊天项目中, 之前翻遍了整个 Github 没找着, 就自己整了一个, 顺便开源. 
 
+## 截屏
+
+![](http://ww3.sinaimg.cn/large/6d86d850jw1exg1k5v3fwj20bx0fkdho.jpg)
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
 
-## Requirements
+## 系统要求
 
 * iOS7+ project
 * ARC project
 
 ## 安装
 
-### 通过 CocoaPods 安装
+### CocoaPods 安装
 
 将下面代码复制进你的 `Podfile` 文件中
 
@@ -24,9 +26,12 @@ pod 'StitchingImage', :git => 'https://github.com/zhengjinghua/StitchingImage.gi
 
 [下载](https://github.com//zhengjinghua/StitchingImage/archive/master.zip) 此项目, 并将该项目里的 `Classes` 文件夹里的所有文件复制进你的项目中, 然后在需要调用此项目的地方引入 `#import "StitchImage.h"` .
 
-## Usage
+## 使用
 
-#### 将你要拼接的头像文件放入到一个 NSMutableArray 中
+### 1. 收集头像数组
+
+将你要拼接的头像文件放入到一个 NSMutableArray 中
+
 
 ```objective-c
 
@@ -42,7 +47,9 @@ imageView_2.image = [UIImage imageNamed:@"2.jpg"];
 
 ```
 
-#### 生成一个背景 canvasView, 用于存放拼接好的群组封面.
+### 2. 准备好画布
+
+生成一个背景 canvasView, 用于存放拼接好的群组封面, 相当于背景.
 
 ```objective-c
 UIImageView *canvasView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -51,13 +58,17 @@ canvasView.layer.masksToBounds = YES;
 canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 ```
 
-#### 现在你可以调用以下方法, 将用户的头像拼接到指定的 canvasView 上
+### 3. 绘画并生成
+
+现在你可以调用以下方法, 将用户的头像画到指定的 canvasView 上
 
 ```objective-c   
 [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 ```
 
-#### 如果你想自定义生成的群组封面里的 margin 值, 你可以调用以下方法
+### 4. 修改 Margin 
+
+如果你想自定义生成的群组封面里的 margin 值, 你可以调用以下方法
 ```objective-c  
 [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
 ```
