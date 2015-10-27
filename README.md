@@ -1,27 +1,32 @@
 ## StitchingImage
-在之前的公司项目中, 有一个类似生成微信群组封面 (即将指定数量用户的头像拼接成一个新的封面) 的需求, 在开发的过程中发现没有人写过相应的比较好的解决方案, 因此我自己造了一个轮子, 希望能帮助到有同类需求的同学.
+在之前的公司项目中, 有一个类似生成微信群组封面 (即将指定数量用户的头像拼接成一个新的封面) 的需求, 在开发的过程中发现没有人写过相应的比较好的解决方案, 因此我自己造了一个轮子, 希望能帮助到有类似需求的同学.
 
 ## Screenshot
+
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
 
+## Requirements
 
-## Install
+* iOS7+ project
+* ARC project
 
-### CocoaPods
-If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
+## 安装
+
+### 通过 CocoaPods 安装
+
+将下面代码复制进你的 `Podfile` 文件中
 
 ``` bash
 pod 'StitchingImage', :git => 'https://github.com/zhengjinghua/StitchingImage.git'
 ```
-into your Podfile file.
 
-### Manually
+### 手工安装
 
-[Download](https://github.com//zhengjinghua/StitchingImage/archive/master.zip) the project and copy the `Classes` folder into your project and then simply `#import "StitchImage.h"` in the file(s) you would like to use it in.
+[下载](https://github.com//zhengjinghua/StitchingImage/archive/master.zip) 此项目, 并将该项目里的 `Classes` 文件夹里的所有文件复制进你的项目中, 然后在需要调用此项目的地方引入 `#import "StitchImage.h"` .
 
 ## Usage
 
-#### Create NSMutableArray for image views
+#### 将你要拼接的头像文件放入到一个 NSMutableArray 中
 
 ```objective-c
 
@@ -37,7 +42,7 @@ imageView_2.image = [UIImage imageNamed:@"2.jpg"];
 
 ```
 
-#### Create a canvasView
+#### 生成一个背景 canvasView, 用于存放拼接好的群组封面.
 
 ```objective-c
 UIImageView *canvasView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -46,13 +51,13 @@ canvasView.layer.masksToBounds = YES;
 canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 ```
 
-#### You can stitching image right now
+#### 现在你可以调用以下方法, 将用户的头像拼接到指定的 canvasView 上
 
 ```objective-c   
 [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 ```
 
-#### If you want to change margin value, you can use
+#### 如果你想自定义生成的群组封面里的 margin 值, 你可以调用以下方法
 ```objective-c  
 [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
 ```
