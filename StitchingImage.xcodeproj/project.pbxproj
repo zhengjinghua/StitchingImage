@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1393C501BDE6A85000ED14D /* StitchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1393C4F1BDE6A85000ED14D /* StitchImage.m */; settings = {ASSET_TAGS = (); }; };
+		C1393C501BDE6A85000ED14D /* StitchingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1393C4F1BDE6A85000ED14D /* StitchingImage.m */; settings = {ASSET_TAGS = (); }; };
 		C15035CC1BC7B84C00E7818C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035CB1BC7B84C00E7818C /* main.m */; };
 		C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035CE1BC7B84C00E7818C /* AppDelegate.m */; };
 		C15035D21BC7B84C00E7818C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035D11BC7B84C00E7818C /* ViewController.m */; };
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C1393C4E1BDE6A85000ED14D /* StitchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchImage.h; sourceTree = "<group>"; };
-		C1393C4F1BDE6A85000ED14D /* StitchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchImage.m; sourceTree = "<group>"; };
+		C1393C4E1BDE6A85000ED14D /* StitchingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchingImage.h; sourceTree = "<group>"; };
+		C1393C4F1BDE6A85000ED14D /* StitchingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchingImage.m; sourceTree = "<group>"; };
 		C15035C71BC7B84C00E7818C /* StitchingImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StitchingImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15035CB1BC7B84C00E7818C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C15035CD1BC7B84C00E7818C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		C1393C4D1BDE6A85000ED14D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C1393C4E1BDE6A85000ED14D /* StitchImage.h */,
-				C1393C4F1BDE6A85000ED14D /* StitchImage.m */,
+				C1393C4E1BDE6A85000ED14D /* StitchingImage.h */,
+				C1393C4F1BDE6A85000ED14D /* StitchingImage.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 				C15035D21BC7B84C00E7818C /* ViewController.m in Sources */,
 				C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */,
 				C15035CC1BC7B84C00E7818C /* main.m in Sources */,
-				C1393C501BDE6A85000ED14D /* StitchImage.m in Sources */,
+				C1393C501BDE6A85000ED14D /* StitchingImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

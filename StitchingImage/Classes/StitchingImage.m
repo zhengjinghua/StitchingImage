@@ -6,18 +6,18 @@
 //  Copyright © 2015 Jin. All rights reserved.
 //
 
-#import "StitchImage.h"
+#import "StitchingImage.h"
 
 const CGFloat marginSpaceRatio = 27.0;
 
-@interface StitchImage ()
+@interface StitchingImage ()
 {
    CGFloat _cellImageViewchrSideLength;
    CGFloat _margin;
 }
 @end
 
-@implementation StitchImage
+@implementation StitchingImage
 
 - (UIImageView *)stitchingOnImageView:(UIImageView *)canvasView withImageViews:(NSArray *)imageViews {
     _margin = canvasView.frame.size.width / marginSpaceRatio;
