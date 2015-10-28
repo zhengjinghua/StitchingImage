@@ -56,13 +56,17 @@ canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 
 ### 3. You can stitching image right now
 ```objective-c   
-[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+
+[self.view addSubview:coverImage];
 ```
 
 ### 4. Change margin value 
 
 ```objective-c  
-[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
+
+[self.view addSubview:coverImage];
 ```
 
 ## License
@@ -128,18 +132,24 @@ canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 
 ```objective-c   
 // 现在你可以调用以下方法, 将用户的头像画到指定的 canvasView 上
-[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+
+[self.view addSubview:coverImage];
 ```
 
 ### 4. 修改 Margin 
 
 ```objective-c  
 // 如果你想自定义生成的群组封面里的 margin 值, 你可以调用以下方法
-[[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f]
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
+
+[self.view addSubview:coverImage];
 ```
 
 ## 协议
 
 StitchingImage 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
 
+
+====
 
