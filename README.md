@@ -29,7 +29,7 @@ into your Podfile file.
 
 ## Usage
 
-#### 1. Create NSMutableArray for image views
+### 1. Create NSMutableArray for image views
 
 
 ```objective-c
@@ -149,7 +149,4 @@ UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasVie
 ## 协议
 
 StitchingImage 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
-
-
-====
 
