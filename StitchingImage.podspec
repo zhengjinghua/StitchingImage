@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint StitchingImage.podspec' to ensure this is a
+#  Be sure to run `pod spec lint stitchingImage.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "StitchingImage"
+  s.name         = "stitchingImage"
   s.version      = "1.0"
-  s.summary      = "仿微信群组头像拼接功能"
+  s.summary      = "仿微信群组封面拼接功能"
 
   s.description  = <<-DESC
-                   A longer description of StitchingImage in Markdown format.
+                   A longer description of stitchingImage in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/zhengjinghua/StitchingImage"
+  s.homepage     = "https://github.com/zhengjinghua/stitchingImage"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/zhengjinghua/StitchingImage.git", :commit => "137f25933f9777c692374f471c0d273735266ad7" }
+  s.source       = { :git => "https://github.com/zhengjinghua/stitchingImage.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "StitchingImage/Classes", "StitchingImage/Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 

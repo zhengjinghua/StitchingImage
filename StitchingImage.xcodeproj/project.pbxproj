@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1393C501BDE6A85000ED14D /* StitchingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1393C4F1BDE6A85000ED14D /* StitchingImage.m */; settings = {ASSET_TAGS = (); }; };
+		C10498B41BE21476002AE2EA /* StitchingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C10498B31BE21476002AE2EA /* StitchingImage.m */; };
 		C15035CC1BC7B84C00E7818C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035CB1BC7B84C00E7818C /* main.m */; };
 		C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035CE1BC7B84C00E7818C /* AppDelegate.m */; };
 		C15035D21BC7B84C00E7818C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035D11BC7B84C00E7818C /* ViewController.m */; };
@@ -15,7 +15,7 @@
 		C15035DA1BC7B84C00E7818C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15035D81BC7B84C00E7818C /* LaunchScreen.storyboard */; };
 		C15035E51BC7B84C00E7818C /* StitchingImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035E41BC7B84C00E7818C /* StitchingImageTests.m */; };
 		C15035F01BC7B84C00E7818C /* StitchingImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15035EF1BC7B84C00E7818C /* StitchingImageUITests.m */; };
-		C17ED0CF1BDB2AAF00B56E86 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17ED0CE1BDB2AAF00B56E86 /* images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		C17ED0CF1BDB2AAF00B56E86 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17ED0CE1BDB2AAF00B56E86 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C1393C4E1BDE6A85000ED14D /* StitchingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchingImage.h; sourceTree = "<group>"; };
-		C1393C4F1BDE6A85000ED14D /* StitchingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchingImage.m; sourceTree = "<group>"; };
+		C10498B21BE21476002AE2EA /* StitchingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchingImage.h; sourceTree = "<group>"; };
+		C10498B31BE21476002AE2EA /* StitchingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchingImage.m; sourceTree = "<group>"; };
 		C15035C71BC7B84C00E7818C /* StitchingImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StitchingImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15035CB1BC7B84C00E7818C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C15035CD1BC7B84C00E7818C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,11 +81,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C1393C4D1BDE6A85000ED14D /* Classes */ = {
+		C10498B11BE21476002AE2EA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C1393C4E1BDE6A85000ED14D /* StitchingImage.h */,
-				C1393C4F1BDE6A85000ED14D /* StitchingImage.m */,
+				C10498B21BE21476002AE2EA /* StitchingImage.h */,
+				C10498B31BE21476002AE2EA /* StitchingImage.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		C15035C91BC7B84C00E7818C /* StitchingImage */ = {
 			isa = PBXGroup;
 			children = (
-				C1393C4D1BDE6A85000ED14D /* Classes */,
+				C10498B11BE21476002AE2EA /* Classes */,
 				C15035CD1BC7B84C00E7818C /* AppDelegate.h */,
 				C15035CE1BC7B84C00E7818C /* AppDelegate.m */,
 				C15035D01BC7B84C00E7818C /* ViewController.h */,
@@ -287,7 +287,7 @@
 				C15035D21BC7B84C00E7818C /* ViewController.m in Sources */,
 				C15035CF1BC7B84C00E7818C /* AppDelegate.m in Sources */,
 				C15035CC1BC7B84C00E7818C /* main.m in Sources */,
-				C1393C501BDE6A85000ED14D /* StitchingImage.m in Sources */,
+				C10498B41BE21476002AE2EA /* StitchingImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
