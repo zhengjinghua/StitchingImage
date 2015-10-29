@@ -29,7 +29,7 @@ into your Podfile file.
 
 ## Usage
 
-#### Create NSMutableArray for image views
+#### 1. Create NSMutableArray for image views
 
 
 ```objective-c
