@@ -1,10 +1,12 @@
+[中文见这里](https://github.com/zhengjinghua/StitchingImage#readme-chinese)
+
 # StitchingImage
 ![](http://ww3.sinaimg.cn/large/6d86d850jw1exg1k5v3fwj20bx0fkdho.jpg)
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
 
 ## Description
 
-Stitching image  just like **wechat** group chat's cover
+Stitching image  just like **WeChat** group chat's cover
 
 ## Requirements
 
@@ -54,7 +56,7 @@ canvasView.layer.masksToBounds = YES;
 canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
 ```
 
-### 3. You can stitching image right now
+### 3. Stitching images
 ```objective-c   
 UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
 
@@ -74,7 +76,7 @@ UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasVie
 StitchingImage is available under the MIT license. See the LICENSE file for more info.
 
 ---
-README(Chinese)
+README (Chinese)
 ==========
 
 ## 说明
@@ -148,5 +150,7 @@ UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasVie
 
 ## 协议
 
-StitchingImage 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
+StitchingImage 被许可在 MIT 协议下使用. 查阅 LICENSE 文件来获得更多信息.
+
+
 
