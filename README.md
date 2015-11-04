@@ -1,87 +1,12 @@
-[中文见这里](https://github.com/zhengjinghua/StitchingImage#readme-chinese)
-
-# StitchingImage
-![](http://ww3.sinaimg.cn/large/6d86d850jw1exg1k5v3fwj20bx0fkdho.jpg)
-![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
-
-## Description
-
-Stitching image  just like **WeChat** group chat's cover
-
-## Requirements
-
-* iOS7+ project
-* ARC project
-
-## Install
-
-### CocoaPods
-
-If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
-
-``` bash
-pod 'StitchingImage', :git => 'https://github.com/zhengjinghua/StitchingImage.git'
-```
-into your Podfile file.
-
-### Manually
-
-[Download](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) the project and copy the `Classes` folder into your project and then simply `#import "StitchingImage.h"` in the file(s) you would like to use it in.
-
-
-## Usage
-
-### 1. Create NSMutableArray for image views
-
-
-```objective-c
-NSMutableArray *imageViews = [[NSMutableArray alloc] init];
-    
-UIImageView *imageView_1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-imageView_1.image = [UIImage imageNamed:@"1.jpg"];
-[imageViews addObject:imageView_1];
-    
-UIImageView *imageView_2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-imageView_2.image = [UIImage imageNamed:@"2.jpg"];
-[imageViews addObject:imageView_2];
-
-```
-
-### 2. Create a canvasView
-
-```objective-c
-UIImageView *canvasView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-canvasView.layer.cornerRadius = 10;
-canvasView.layer.masksToBounds = YES;
-canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
-```
-
-### 3. Stitching images
-```objective-c   
-UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
-
-[self.view addSubview:coverImage];
-```
-
-### 4. Change margin value 
-
-```objective-c  
-UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
-
-[self.view addSubview:coverImage];
-```
-
-## License
-
-StitchingImage is available under the MIT license. See the LICENSE file for more info.
-
----
-README (Chinese)
-==========
+[中文见这里](https://github.com/zhengjinghua/StitchingImage#readme-english)
 
 ## 说明
 
 类似**微信**群组封面拼接, 适用于聊天项目中, 之前翻遍了整个 Github 没找着, 就自己整了一个, 顺便开源. 
+
+![](http://ww3.sinaimg.cn/large/6d86d850jw1exg1k5v3fwj20bx0fkdho.jpg)
+![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
+
 
 ## 系统要求
 
@@ -153,4 +78,78 @@ UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasVie
 StitchingImage 被许可在 MIT 协议下使用. 查阅 LICENSE 文件来获得更多信息.
 
 
+---
+README (English)
+==========
+
+## Introduction
+
+Stitching image  just like **WeChat** group chat's cover
+
+## Requirements
+
+* iOS7+ project
+* ARC project
+
+## Install
+
+### CocoaPods
+
+If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
+
+``` bash
+pod 'StitchingImage', :git => 'https://github.com/zhengjinghua/StitchingImage.git'
+```
+into your Podfile file.
+
+### Manually
+
+[Download](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) the project and copy the `Classes` folder into your project and then simply `#import "StitchingImage.h"` in the file(s) you would like to use it in.
+
+
+## Usage
+
+### 1. Create NSMutableArray for image views
+
+
+```objective-c
+NSMutableArray *imageViews = [[NSMutableArray alloc] init];
+    
+UIImageView *imageView_1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+imageView_1.image = [UIImage imageNamed:@"1.jpg"];
+[imageViews addObject:imageView_1];
+    
+UIImageView *imageView_2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+imageView_2.image = [UIImage imageNamed:@"2.jpg"];
+[imageViews addObject:imageView_2];
+
+```
+
+### 2. Create a canvasView
+
+```objective-c
+UIImageView *canvasView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+canvasView.layer.cornerRadius = 10;
+canvasView.layer.masksToBounds = YES;
+canvasView.backgroundColor = [UIColor colorWithWhite:0.839 alpha:1.000];
+```
+
+### 3. Stitching images
+```objective-c   
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews];
+
+[self.view addSubview:coverImage];
+```
+
+### 4. Change margin value 
+
+```objective-c  
+UIImageView *coverImage = [[StitchingImage alloc] stitchingOnImageView:canvasView withImageViews:imageViews marginValue:15.0f];
+
+[self.view addSubview:coverImage];
+```
+
+## License
+
+StitchingImage is available under the MIT license. See the LICENSE file for more info.
 
