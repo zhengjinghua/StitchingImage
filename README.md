@@ -4,6 +4,8 @@
 
 类似**微信**群组封面拼接, 适用于聊天项目中, 之前翻遍了整个 Github 没找着, 就自己整了一个, 顺便开源. 
 
+> Made with :heart: by [The EST Group](http://est-group.org) - We design and build: the Future!
+
 ![](http://ww3.sinaimg.cn/large/6d86d850jw1exg1k5v3fwj20bx0fkdho.jpg)
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/stitchingImageScreenshot.png?imageView2/2/w/375)
 
@@ -85,6 +87,8 @@ README (English)
 ## Introduction
 
 Stitching image  just like **WeChat** group chat's cover
+
+> Made with :heart: by [The EST Group](http://est-group.org) - We design and build: the Future!
 
 ## Requirements
 
