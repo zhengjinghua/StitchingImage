@@ -1,4 +1,4 @@
-[中文见这里](https://github.com/zhengjinghua/StitchingImage#readme-english)
+[English Guide](https://github.com/zhengjinghua/StitchingImage#readme-english)
 
 ## 说明
 
