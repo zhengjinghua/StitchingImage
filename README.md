@@ -1,3 +1,14 @@
+<p align="center">
+  <br>
+  <b>Always inventing, Always delivering:</b>
+  <br><br>
+  <a href="https://www.yousails.com">
+    <img src="https://yousails.com/banners/brand.png" width=350>
+  </a>
+</p>
+
+---
+
 [English Guide](https://github.com/zhengjinghua/StitchingImage#readme-english)
 
 ## 说明
